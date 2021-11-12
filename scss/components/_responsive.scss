@@ -1,0 +1,44 @@
+@media screen and (max-width: 1500px){
+    .articulo__texto{
+        h2{
+            font-size: 1.5em;
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    .banner__text{
+        h1{
+            font-size: 2em;
+        }
+    }
+    .banner__img{
+        display: none;
+    }
+    .aritucilo__estudio{
+        grid-template-columns: 1fr;
+    }
+    .article__imagen{
+        width: 100%;
+        grid-row-start: 1;
+    }
+    .servicios__index_content_articles{
+        align-items: center;
+        justify-content: center;
+    }
+    .mas__compass{
+        flex-direction: column;
+        article::after{
+            font-size: 1em !important;
+            height: 20px;
+            width: 20px;
+            background: #000 !important;
+        }
+    }
+    .cont__articulos__publicaciones{
+        flex-direction: column-reverse;
+    }
+    .articulos__post{
+        flex-direction: column;
+        align-items: center;
+    }
+}

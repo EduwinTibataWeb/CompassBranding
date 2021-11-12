@@ -32,4 +32,10 @@ $( document ).ready(function() {
     }, duration);
     return false;
   });
+  var getMenuIcon = $(".icon__menu");
+  var getMenu = $(".nav__menu");
+  getMenuIcon.on('click', function(){
+    $(this).toggleClass("icon__active");
+    $(getMenu).toggleClass("menu__active")
+  });
 });
