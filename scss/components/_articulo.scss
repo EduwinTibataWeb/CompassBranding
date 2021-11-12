@@ -13,7 +13,7 @@
     }
 }
 .art_content_text{
-    padding: 3em 0;
+    padding: 3em 0 1em;
     p{
         margin-bottom: 2em;
         font-size: 19px;
@@ -36,5 +36,65 @@
             background: #e8ecef;
             padding: .2em;
         }
+    }
+}
+.art_content_botton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    & > a{
+        width: 100%;
+    }
+    section{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 0;
+        a{
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            color: #418f9a;
+            i{
+                color: #ff7070;
+                font-size: 2em;
+                padding: 12px;
+                transition: all .3s ease-in;
+            }
+            &:last-child:hover i{
+                transform: translateX(5px) scale(0.8);
+            
+            }
+            &:first-child:hover i{
+                transform: translateX(-5px) scale(0.8);
+            
+            }
+        }
+    }
+
+}
+.block-divider {
+    background: url('https://secureservercdn.net/104.238.68.196/x7p.5b7.myftpupload.com/wp-content/themes/scalia/images/divider-wave.png') repeat-x scroll 50% 0 rgba(0, 0, 0, 0);
+    border-top: 0 none;
+    height: 8px;
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 24px;
+}
+.articulos_relacionados{
+    padding: 1em 10%;
+    width: 100%;
+    background-color: #e8ecef;
+    background-image: url('../assets/fondo_curvas.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    h3{
+        padding: 1em 0;
+        font-size: 2em;
     }
 }

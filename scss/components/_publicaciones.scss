@@ -104,10 +104,21 @@ figure.snip1300 {
     align-items: center;
     a{
         color: #418f9a;
+        transition: all .3s ease;
         i{
             color: #ff7070;
             font-size: 1.2em;
+            transition: all .3s ease;
         }
+        &:hover{
+            transform: translateX(-20px);
+            i{
+                transform: translateX(85px);
+            }
+        }
+    }
+    p{
+        color: #99a3b0;
     }
 }
 .cont__articulos__publicaciones{
