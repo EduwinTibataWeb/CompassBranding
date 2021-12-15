@@ -41,4 +41,24 @@
         flex-direction: column;
         align-items: center;
     }
+    .aliados__content{
+        margin: 1em 0 0;
+        h2{
+            margin: 0;
+        }
+    }
+    .footer__cont_derechos{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .servicios__pregunta{
+        flex-direction: column;
+        justify-content: center;
+        p{
+            text-align: left;
+        }
+    }
+    .mas__compass{
+        padding: 2em 10% 0;
+    }
 }

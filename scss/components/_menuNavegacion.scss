@@ -272,6 +272,13 @@ ul.nav__menu_submenu{
         display: flex;    
     }
 }
+@media screen and (max-width: 500px){
+    .nav__logo{
+        width: 150px;
+        padding: 0.5em 0;
+        justify-content: start;
+    }
+}
 @keyframes li__menu {
     from{
         transform: translateX(50%);

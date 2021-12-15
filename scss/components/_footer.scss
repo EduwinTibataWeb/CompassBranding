@@ -49,6 +49,7 @@
         color: #2c2e3a;
         cursor: pointer;
         transition: all .3s ease;
+        word-break: break-all;
         &:hover{
             color: #58abb7;
         }
