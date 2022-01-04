@@ -1,0 +1,47 @@
+.banner_titulo_img{
+    background-image: url("https://www.compassporternovelli.com/wp-content/uploads/2018/05/IMAGEN-COMPASS.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 300px;
+}
+.banner_titulo{
+    height: 100%;
+    position: relative;
+    display: block;
+    left: 0px;
+    top: 0px;
+}
+.banner__content_titulo{
+    background-color: rgba(#0000, .7);
+    height: 100%;
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    padding: 4em 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    a{
+        margin-top: 2em;
+    }
+    h1{
+        font-size: 3em;
+        max-width: 1000px;
+        position: relative;
+        &::after{
+            content: '';
+            width: 50%;
+            height: 2px;
+            display: flex;
+            background-color: #fff;
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translate(-50%);
+        }
+    }
+}

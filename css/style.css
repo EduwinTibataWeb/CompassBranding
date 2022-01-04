@@ -1246,6 +1246,210 @@ figure.snip1300 {
     padding: 1em 0;
     font-size: 2em; }
 
+.banner_titulo_img {
+  background-image: url("https://www.compassporternovelli.com/wp-content/uploads/2018/05/IMAGEN-COMPASS.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 300px; }
+
+.banner_titulo {
+  height: 100%;
+  position: relative;
+  display: block;
+  left: 0px;
+  top: 0px; }
+
+.banner__content_titulo {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  min-height: 300px;
+  width: 100%;
+  display: flex;
+  padding: 4em 10%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .banner__content_titulo a {
+    margin-top: 2em; }
+  .banner__content_titulo h1 {
+    font-size: 3em;
+    max-width: 1000px;
+    position: relative; }
+    .banner__content_titulo h1::after {
+      content: '';
+      width: 50%;
+      height: 2px;
+      display: flex;
+      background-color: #fff;
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      transform: translate(-50%); }
+
+.header_contact {
+  width: 100%;
+  height: 400px;
+  background: #000;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4c/Centro_internacional.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.contact_tittle {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contact_tittle h1 {
+    font-size: 4em; }
+
+.cart_boss {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .cart_boss figure {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap; }
+    .cart_boss figure img {
+      border-radius: 50%;
+      transform: translateY(-50%);
+      border: 5px solid #fff;
+      width: 300px;
+      height: 300px; }
+    .cart_boss figure figcaption {
+      padding: 1em;
+      word-break: break-all; }
+      .cart_boss figure figcaption h2 {
+        font-size: 2em; }
+      .cart_boss figure figcaption p {
+        padding-bottom: 1.5em;
+        position: relative; }
+        .cart_boss figure figcaption p::after {
+          content: '';
+          display: inline-flex;
+          background: #ff7070;
+          position: absolute;
+          width: 100px;
+          height: 5px;
+          bottom: 10px;
+          left: 0; }
+      .cart_boss figure figcaption a {
+        color: #58abb7; }
+
+.cont_equipo {
+  padding: 0 10%; }
+  .cont_equipo > h2 {
+    font-size: 2em;
+    position: relative;
+    padding-bottom: 1em; }
+    .cont_equipo > h2::after {
+      content: '';
+      display: inline-flex;
+      background: #ff7070;
+      position: absolute;
+      width: 100px;
+      height: 5px;
+      bottom: 10px;
+      left: 0; }
+
+.cont_all_equipo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.snip1336 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  background-color: #141414;
+  transition: all .3s ease-in; }
+  .snip1336 * {
+    transition: all 0.25s ease; }
+  .snip1336:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 78px 32px -64px rgba(0, 0, 0, 0.34); }
+  .snip1336 img {
+    width: 100%;
+    vertical-align: top;
+    opacity: 0.85;
+    max-height: 300px;
+    object-fit: contain;
+    background: #000; }
+  .snip1336 figcaption {
+    width: 100%;
+    background-color: #141414;
+    padding: 25px;
+    position: relative; }
+    .snip1336 figcaption:before {
+      position: absolute;
+      content: '';
+      bottom: 100%;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 55px 0 0 400px;
+      border-color: transparent transparent transparent #141414; }
+    .snip1336 figcaption a {
+      padding: 5px;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin: 10px 0;
+      display: inline-block;
+      opacity: 0.65;
+      text-align: center;
+      text-decoration: none; }
+      .snip1336 figcaption a:hover {
+        opacity: 1; }
+  .snip1336 h2 {
+    margin: 0 0 5px;
+    font-weight: 300; }
+    .snip1336 h2 span {
+      display: block;
+      font-size: 0.5em;
+      color: #58abb7; }
+  .snip1336 p {
+    margin: 0 0 10px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    height: 100px;
+    overflow: scroll; }
+    .snip1336 p::-webkit-scrollbar {
+      display: none; }
+  .snip1336 .profile {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    left: 25px;
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    font-size: .5em; }
+  .snip1336 .follow {
+    margin-right: 4%;
+    border-color: #58abb7;
+    color: #58abb7; }
+
 .footer__buscador {
   background: #2c2e3a;
   color: #fff;
