@@ -50,72 +50,59 @@ $( document ).ready(function() {
   }
   typing();
 });
-var getAllEquipo = $('#Cotequipo');
-  var equipoObje = [
-    {
-      foto: 'https://compassbranding.com/wp-content/uploads/2020/04/Gonzalo-Piñeros-Final-678x1024.jpg',
-      nombre: "Gonzalo Piñeros",
-      cargo: 'Vicepresidente',
-      descripcion: 'El amor es una experiencia universal que nos conmueve a todos, pero a veces no hallamos las palabras adecuadas para expresarlo. ',
-      fotoFondo: 'https://en.investinbogota.org/sites/default/files/node/news/field_news_imagen/Dario_FuentesFOTO%20BOGOTA%201%20Centro%20Bogota%CC%81-%20DARIO%20%28REDES%29.jpg',
-      enlaceLi: 'https://www.linkedin.com/in/gonzalo-pi%C3%B1eros/',
-      enlaceWa: '3232812574',
-    },
-    {
-      foto: 'https://compassbranding.com/wp-content/uploads/2020/04/Fernando-Final-678x1024.jpg',
-      nombre: "Fernando Garzón",
-      cargo: 'Director de cuentas',
-      descripcion: 'Bla bal bla',
-      fotoFondo: 'https://en.investinbogota.org/sites/default/files/node/news/field_news_imagen/Dario_FuentesFOTO%20BOGOTA%201%20Centro%20Bogota%CC%81-%20DARIO%20%28REDES%29.jpg',
-      enlaceLi: 'https://www.linkedin.com/in/fergarzon/',
-      enlaceWa: '3232812574',
-    },
-    {
-      foto: 'https://scontent-bog1-1.xx.fbcdn.net/v/t1.6435-9/194409771_4244607968912042_1462343248467021874_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=FaL7spd2Gb4AX-OfkfL&tn=s-L-xCp19x1RKnPF&_nc_ht=scontent-bog1-1.xx&oh=00_AT9NbpAknY9juefNx5I8kEqWzz9HIGvjIF-UvusUGiQiRg&oe=61FBBB04',
-      nombre: "Eduwin Tibatá",
-      cargo: 'Productor Multimedia',
-      descripcion: 'Bla bal bla',
-      fotoFondo: 'https://en.investinbogota.org/sites/default/files/node/news/field_news_imagen/Dario_FuentesFOTO%20BOGOTA%201%20Centro%20Bogota%CC%81-%20DARIO%20%28REDES%29.jpg',
-      enlaceLi: 'https://www.linkedin.com/in/eduwintibata/',
-      enlaceWa: '3232812574',
-    },
-    {
-      foto: 'https://compassbranding.com/wp-content/uploads/2020/04/Gonzalo-Piñeros-Final-678x1024.jpg',
-      nombre: "Gonzalo Piñeros",
-      cargo: 'Vicepresidente',
-      descripcion: 'El amor es una experiencia universal que nos conmueve a todos, pero a veces no hallamos las palabras adecuadas para expresarlo. El amor es una experiencia universal que nos conmueve a todos, pero a veces no hallamos las palabras adecuadas para expresarlo.  ',
-      fotoFondo: 'https://en.investinbogota.org/sites/default/files/node/news/field_news_imagen/Dario_FuentesFOTO%20BOGOTA%201%20Centro%20Bogota%CC%81-%20DARIO%20%28REDES%29.jpg',
-      enlaceLi: 'https://www.linkedin.com/in/gonzalo-pi%C3%B1eros/',
-      enlaceWa: '3232812574',
-    },
-    {
-      foto: 'https://compassbranding.com/wp-content/uploads/2020/04/Fernando-Final-678x1024.jpg',
-      nombre: "Fernando Garzón",
-      cargo: 'Director de cuentas',
-      descripcion: 'Bla bal bla',
-      fotoFondo: 'https://en.investinbogota.org/sites/default/files/node/news/field_news_imagen/Dario_FuentesFOTO%20BOGOTA%201%20Centro%20Bogota%CC%81-%20DARIO%20%28REDES%29.jpg',
-      enlaceLi: 'https://www.linkedin.com/in/fergarzon/',
-      enlaceWa: '3232812574',
-    },
-    {
-      foto: 'https://scontent-bog1-1.xx.fbcdn.net/v/t1.6435-9/194409771_4244607968912042_1462343248467021874_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=FaL7spd2Gb4AX-OfkfL&tn=s-L-xCp19x1RKnPF&_nc_ht=scontent-bog1-1.xx&oh=00_AT9NbpAknY9juefNx5I8kEqWzz9HIGvjIF-UvusUGiQiRg&oe=61FBBB04',
-      nombre: "Eduwin Tibatá",
-      cargo: 'Productor Multimedia',
-      descripcion: 'Bla bal bla',
-      fotoFondo: 'https://en.investinbogota.org/sites/default/files/node/news/field_news_imagen/Dario_FuentesFOTO%20BOGOTA%201%20Centro%20Bogota%CC%81-%20DARIO%20%28REDES%29.jpg',
-      enlaceLi: 'https://www.linkedin.com/in/eduwintibata/',
-      enlaceWa: '3232812574',
-    },
-  ]
-  for (i of equipoObje) {
-    getAllEquipo.append(`<figure class="snip1336">
-                              <img src="${i.foto}" alt="sample87" />
-                              <figcaption>
-                                  <img src="${i.foto}" alt="profile" class="profile" />
-                                  <h2>${i.nombre}<span>${i.cargo}</span></h2>
-                                  <p>${i.descripcion}</p>
-                                  <a href="${i.enlaceLi}" target="_blank" title="linkedin" class="follow"><i class="fab fa-linkedin-in"></i></a>
-                                  <a href="https://api.whatsapp.com/send?phone=57${i.enlaceWa}" title="Whatsapp" target="_blank" class="info"><i class="fab fa-whatsapp"></i></a>
-                                </figcaption>
-                              </figure>`)
-  }
+var getBanner = $('#banner');
+function bannerGenerate() {
+  getBanner.append(`<figure class="banner" style="background-image: url(${publicObje[0].img_referencia})";>
+                      <figcaption class="banner__content">
+                          <div class="banner__text">
+                              <h1>${publicObje[0].titulo}</h1>
+                              <p>${publicObje[0].texto}</p>
+                              <a href="futbol_colombiano.html" class="boton__blanco">Ver el estudio <i class="fas fa-caret-right"></i><span class="left"></span></a>
+                          </div>    
+                          <div class="banner__img">
+                              <img src="${publicObje[0].img}" alt="Este es el ranking de las marcas más valiosas del fútbol colombiano 2021">
+                              <a href="articulo.html"></a>
+                          </div>
+                      </figcaption>
+                    </figure>`);
+}
+bannerGenerate();
+var geTemas = $('.aside__temas li');
+var geTitleTema = $('.articulos__publicaciones');
+var geTitle = $('.titleArt');
+geTemas.on('click', function(){
+  var getTextCat = this.innerHTML;
+  $('.articulos__publicaciones > div').remove();
+  geTitleTema.prepend(`<div><h1>Tema: <span style="background: #2c2e3a; color: #fff; padding: .1em"> ${this.innerHTML} </span></h1></div>`);
+  //Filtro
+  let getArticulo = $('.articulos__post');
+  getArticulo.remove();
+  let claves = Object.keys(publicObje);
+      for(let i = 0; i < publicObje.length; i++){
+        let clave = claves[i];
+        if(publicObje[i].tags[0] == getTextCat || publicObje[i].tags[1] == getTextCat || publicObje[i].tags[2] == getTextCat ){
+            getAllPublic.append(`<article class="articulos__post">
+                                    <figure class="snip1300 blue">
+                                        <img src="${publicObje[i].img}" alt="sample6" />
+                                        <i class="far fa-eye"></i>
+                                        <a href="articulo.html"></a>
+                                    </figure>
+                                    <section class="articulo__texto">
+                                        <div class="sec_1">
+                                            <h2>${publicObje[i].titulo}</h2>
+                                            <ul>
+                                                <li>${publicObje[i].tags[0]}</li> |
+                                                <li>${publicObje[i].tags[1]}</li> |
+                                                <li>${publicObje[i].tags[2]}</li>
+                                            </ul>
+                                            <p>“${publicObje[i].texto}</p>
+                                        </div>
+                                        <div class="sec_2">
+                                            <p>${publicObje[i].fecha}</p>
+                                            <a href="articulo.html"><i class="fas fa-caret-right"></i> Leer Más</a>
+                                        </div>
+                                    </section>
+                                  </article>`);
+        }
+      } 
+});

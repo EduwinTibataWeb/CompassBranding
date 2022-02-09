@@ -4,6 +4,7 @@ figure.snip1300 {
     width: 100%;
     height: 260px;
     max-width: 300px;
+    min-width: 300px;
     min-height: 260px;
     background: #000000;
     text-align: center;
@@ -151,6 +152,7 @@ figure.snip1300 {
         padding: 6px 12px;
         cursor: pointer;
         transition: all .3s ease;
+        margin-bottom: .3em;
         &:hover{
             color: #ffffff;
             background: #418f9a;
@@ -261,6 +263,7 @@ figure.snip1300 {
             border-radius: 50%;
             border: 1px solid #418f9a;
             cursor: pointer;
+            transition: all .3s ease;
             &:hover{
                 background-color: #418f9a;
                 color: #fff;

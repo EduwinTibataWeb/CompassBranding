@@ -4,6 +4,10 @@
             font-size: 1.5em;
         }
     }
+    .cont__articulos__publicaciones{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 @media screen and (max-width: 700px){
     .banner__text{
@@ -34,9 +38,7 @@
             background: #000 !important;
         }
     }
-    .cont__articulos__publicaciones{
-        flex-direction: column-reverse;
-    }
+    
     .articulos__post{
         flex-direction: column;
         align-items: center;
@@ -61,4 +63,5 @@
     .mas__compass{
         padding: 2em 10% 0;
     }
+    
 }
